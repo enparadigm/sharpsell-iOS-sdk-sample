@@ -23,27 +23,27 @@
 		D8608B1927CD182800E36B26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8608B0D27CD182800E36B26 /* AppDelegate.swift */; };
 		D8608B1A27CD182800E36B26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8608B0E27CD182800E36B26 /* SceneDelegate.swift */; };
 		D8ABBC462A63D3C1009CB289 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = D8ABBC452A63D3C1009CB289 /* SharpsellCore */; };
-		D8D753C02A9CC12F00C57B1C /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D753BC2A9CC12F00C57B1C /* App.xcframework */; };
-		D8D753C12A9CC13000C57B1C /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8D753BC2A9CC12F00C57B1C /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D8D753C22A9CC13000C57B1C /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D753BD2A9CC12F00C57B1C /* FBLPromises.xcframework */; };
-		D8D753C32A9CC13000C57B1C /* FBLPromises.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8D753BD2A9CC12F00C57B1C /* FBLPromises.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D8D753C42A9CC13000C57B1C /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D753BE2A9CC12F00C57B1C /* Flutter.xcframework */; };
-		D8D753C52A9CC13000C57B1C /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8D753BE2A9CC12F00C57B1C /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D8D753C62A9CC13000C57B1C /* FMDB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D753BF2A9CC12F00C57B1C /* FMDB.xcframework */; };
-		D8D753C72A9CC13000C57B1C /* FMDB.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8D753BF2A9CC12F00C57B1C /* FMDB.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8BB5B712B34BC9A00688E2C /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BB5B6D2B34BC9700688E2C /* Flutter.xcframework */; };
+		D8BB5B722B34BC9A00688E2C /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8BB5B6D2B34BC9700688E2C /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8BB5B732B34BC9A00688E2C /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BB5B6E2B34BC9800688E2C /* App.xcframework */; };
+		D8BB5B742B34BC9A00688E2C /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8BB5B6E2B34BC9800688E2C /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8BB5B752B34BC9A00688E2C /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BB5B6F2B34BC9900688E2C /* FBLPromises.xcframework */; };
+		D8BB5B762B34BC9A00688E2C /* FBLPromises.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8BB5B6F2B34BC9900688E2C /* FBLPromises.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8BB5B772B34BC9A00688E2C /* FMDB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BB5B702B34BC9900688E2C /* FMDB.xcframework */; };
+		D8BB5B782B34BC9A00688E2C /* FMDB.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8BB5B702B34BC9900688E2C /* FMDB.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D8AF1B112A8628C6001CB79B /* Embed Frameworks */ = {
+		D83442852AFB61A70007058D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D8D753C72A9CC13000C57B1C /* FMDB.xcframework in Embed Frameworks */,
-				D8D753C52A9CC13000C57B1C /* Flutter.xcframework in Embed Frameworks */,
-				D8D753C32A9CC13000C57B1C /* FBLPromises.xcframework in Embed Frameworks */,
-				D8D753C12A9CC13000C57B1C /* App.xcframework in Embed Frameworks */,
+				D8BB5B782B34BC9A00688E2C /* FMDB.xcframework in Embed Frameworks */,
+				D8BB5B722B34BC9A00688E2C /* Flutter.xcframework in Embed Frameworks */,
+				D8BB5B742B34BC9A00688E2C /* App.xcframework in Embed Frameworks */,
+				D8BB5B762B34BC9A00688E2C /* FBLPromises.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,10 +68,10 @@
 		D8608B0E27CD182800E36B26 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D86B853228DD71FB00B0D612 /* Sharpsell_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sharpsell_Demo.entitlements; sourceTree = "<group>"; };
 		D8ABBC442A63D28D009CB289 /* SharpsellCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SharpsellCore; path = "../Swift package/SharpsellCore"; sourceTree = "<group>"; };
-		D8D753BC2A9CC12F00C57B1C /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "../../../../../../Downloads/sharpsell (1)/Release/App.xcframework"; sourceTree = "<group>"; };
-		D8D753BD2A9CC12F00C57B1C /* FBLPromises.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBLPromises.xcframework; path = "../../../../../../Downloads/sharpsell (1)/Release/FBLPromises.xcframework"; sourceTree = "<group>"; };
-		D8D753BE2A9CC12F00C57B1C /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "../../../../../../Downloads/sharpsell (1)/Release/Flutter.xcframework"; sourceTree = "<group>"; };
-		D8D753BF2A9CC12F00C57B1C /* FMDB.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FMDB.xcframework; path = "../../../../../../Downloads/sharpsell (1)/Release/FMDB.xcframework"; sourceTree = "<group>"; };
+		D8BB5B6D2B34BC9700688E2C /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "../../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/Release/Flutter.xcframework"; sourceTree = "<group>"; };
+		D8BB5B6E2B34BC9800688E2C /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "../../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/Release/App.xcframework"; sourceTree = "<group>"; };
+		D8BB5B6F2B34BC9900688E2C /* FBLPromises.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBLPromises.xcframework; path = "../../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/Release/FBLPromises.xcframework"; sourceTree = "<group>"; };
+		D8BB5B702B34BC9900688E2C /* FMDB.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FMDB.xcframework; path = "../../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/Release/FMDB.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,14 +79,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8D753C62A9CC13000C57B1C /* FMDB.xcframework in Frameworks */,
+				D8BB5B772B34BC9A00688E2C /* FMDB.xcframework in Frameworks */,
+				D8BB5B752B34BC9A00688E2C /* FBLPromises.xcframework in Frameworks */,
+				D8BB5B712B34BC9A00688E2C /* Flutter.xcframework in Frameworks */,
 				D8ABBC462A63D3C1009CB289 /* SharpsellCore in Frameworks */,
 				D80732C4292B5CA700035116 /* FirebaseMessaging in Frameworks */,
-				D8D753C22A9CC13000C57B1C /* FBLPromises.xcframework in Frameworks */,
-				D8D753C02A9CC12F00C57B1C /* App.xcframework in Frameworks */,
-				D8D753C42A9CC13000C57B1C /* Flutter.xcframework in Frameworks */,
 				D80732C0292B5CA700035116 /* FirebaseAnalytics in Frameworks */,
 				D80732C2292B5CA700035116 /* FirebaseCrashlytics in Frameworks */,
+				D8BB5B732B34BC9A00688E2C /* App.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +280,10 @@
 		D8608B1B27CD184A00E36B26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D8D753BC2A9CC12F00C57B1C /* App.xcframework */,
-				D8D753BD2A9CC12F00C57B1C /* FBLPromises.xcframework */,
-				D8D753BE2A9CC12F00C57B1C /* Flutter.xcframework */,
-				D8D753BF2A9CC12F00C57B1C /* FMDB.xcframework */,
+				D8BB5B6E2B34BC9800688E2C /* App.xcframework */,
+				D8BB5B6F2B34BC9900688E2C /* FBLPromises.xcframework */,
+				D8BB5B6D2B34BC9700688E2C /* Flutter.xcframework */,
+				D8BB5B702B34BC9900688E2C /* FMDB.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -298,7 +298,7 @@
 				D8608AD727CD17D300E36B26 /* Sources */,
 				D8608AD827CD17D300E36B26 /* Frameworks */,
 				D8608AD927CD17D300E36B26 /* Resources */,
-				D8AF1B112A8628C6001CB79B /* Embed Frameworks */,
+				D83442852AFB61A70007058D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -510,7 +510,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_ENTITLEMENTS = Sharpsell_Demo/Sharpsell_Demo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = J8YRGNHWN4;
 				ENABLE_BITCODE = NO;
@@ -537,7 +537,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0.2;
+				MARKETING_VERSION = 3.10.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.enparadigm.sharpsell.sdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -555,7 +555,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_ENTITLEMENTS = Sharpsell_Demo/Sharpsell_Demo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = J8YRGNHWN4;
 				ENABLE_BITCODE = NO;
@@ -581,7 +581,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0.2;
+				MARKETING_VERSION = 3.10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.enparadigm.sharpsell.sdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -44,7 +44,7 @@ class CockpitViewController: UIViewController {
                                      CockpitModel(contentType: .timerChallenge, contentRoute: "tcHome"),
                                      CockpitModel(contentType: .salesBundle, contentRoute: "productBundle"),
                                      CockpitModel(contentType: .quickLinks, contentRoute: "quickLinks"),
-//                                     CockpitModel(contentType: .rolePlay, contentRoute: "rcHome"),
+                                     //                                     CockpitModel(contentType: .rolePlay, contentRoute: "rcHome"),
                                      CockpitModel(contentType: .logout, contentRoute: "")]
     
     // MARK: - View LifeCycle

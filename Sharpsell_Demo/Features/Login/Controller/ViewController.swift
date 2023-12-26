@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sharpsellAPIKeyTxtField: UITextField!
     
     //MARK: - Property Declration
-    var sharpsellReleaseVersion = "One SDK - Core Service"
+    var sharpsellReleaseVersion = "One SDK beta 3 - Ultron - 3.10.0"
     
     //MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     //MARK: - Custom Methods
     private func initalSetup(){
         loginBtn.layer.cornerRadius = 10
-        companyDetailsLbl.text = "Version - \(sharpsellReleaseVersion)"
+        companyDetailsLbl.text = "\(sharpsellReleaseVersion)"
         userUniquieIDTxtField.delegate = self
         sharpsellAPIKeyTxtField.delegate = self
         companyCodeTxtField.delegate = self
