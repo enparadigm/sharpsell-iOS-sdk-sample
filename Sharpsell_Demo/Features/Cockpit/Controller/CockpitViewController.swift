@@ -8,6 +8,7 @@
 import UIKit
 import Flutter
 import SharpsellCore
+import AVFoundation
 
 enum ContentType: String{
     case presentation
@@ -49,6 +50,7 @@ class CockpitViewController: UIViewController {
     
     // MARK: - View LifeCycle
     override func viewDidLoad() {
+    
         super.viewDidLoad()
         initalSetup()
     }

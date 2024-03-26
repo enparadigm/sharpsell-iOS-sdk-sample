@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>611271956323-e6fuao92ih7im0dobutq1tmtohmjj8qi.apps.googleusercontent.com</string>
+	<string>60594173840-2hvsdnovjofsh8cehgu5tjor4kdhcpqj.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.611271956323-e6fuao92ih7im0dobutq1tmtohmjj8qi</string>
+	<string>com.googleusercontent.apps.60594173840-2hvsdnovjofsh8cehgu5tjor4kdhcpqj</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBWNYxo-c-RtJvrnMK8ETLH6Q-NrIbZcUQ</string>
+	<string>AIzaSyCmbfO52V4lTSxI60aW3pgtKUKAfzT7f7g</string>
 	<key>GCM_SENDER_ID</key>
-	<string>611271956323</string>
+	<string>60594173840</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.sharpsell.sharpsellapp</string>
+	<string>com.enparadigm.sharpsell.sdk</string>
 	<key>PROJECT_ID</key>
-	<string>sharpsell-8a445</string>
+	<string>sharpsell-sdk</string>
 	<key>STORAGE_BUCKET</key>
-	<string>sharpsell-8a445.appspot.com</string>
+	<string>sharpsell-sdk.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:611271956323:ios:1d4e4c1c253b0553b6a556</string>
+	<string>1:60594173840:ios:aab6c7dae3e32af360a515</string>
 </dict>
 </plist>

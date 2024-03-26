@@ -7,7 +7,9 @@
 
 import UIKit
 import SharpsellCore
-import Firebase
+import AVFoundation
+
+//import Firebase
 
 
 let defaults = UserDefaults.standard
@@ -23,13 +25,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        FirebaseApp.configure()
+//        FirebaseApp.configure()
         
         //Calling Sharpsell flutter engine
         Sharpsell.services.createFlutterEngine()
         
         setupNotifications(application)
         
+//        AVCaptureDevice.requestAccess(for: .audio) { granted in
+//            if (granted){
+//                print("Granted")
+//            }else {
+//                print("Not - Granted")
+//            }
+//        }
+        
+        
+        
+//        switch AVAudioSession.sharedInstance().recordPermission {
+//            case .granted:
+//                print("Permission granted")
+//            case .denied:
+//                print("Permission denied")
+//            case .undetermined:
+//                print("Request permission here")
+//                AVAudioSession.sharedInstance().requestRecordPermission({ granted in
+//                    if (granted){
+//                        print("Granted")
+//                    }else {
+//                        print("Not - Granted")
+//                    }
+//                })
+//            @unknown default:
+//                print("Unknown case")
+//            }
+        
+    
         if defaults.bool(forKey: "isUserLoggedIn"){
             let cockpitVC = CockpitViewController()
             let navigationController = UINavigationController(rootViewController: cockpitVC)
@@ -64,7 +95,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         application.registerForRemoteNotifications()
-        Messaging.messaging().delegate = self
+//        Messaging.messaging().delegate = self
     }
     
     func setLoginPageAsRootVc(){
@@ -190,23 +221,23 @@ extension AppDelegate: UNUserNotificationCenterDelegate{
 }
 
 //MARK: Notification Delegate
-extension AppDelegate: MessagingDelegate{
-    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
-        NSLog("Sharpsell Parent App: Firebase registration token from iOS: \(String(describing: fcmToken))")
-        
-        let dataDict: [String: String] = ["token": fcmToken ?? ""]
-        NotificationCenter.default.post(
-            name: Notification.Name("FCMToken"),
-            object: nil,
-            userInfo: dataDict
-        )
-        
-        if let token = fcmToken {
-            print(token)
-            defaults.set(String(describing: token), forKey: "fcmToken")
-        } else {
-            NSLog("Sharpsell Parent App: Firebase token is empty ⚠️")
-        }
-    }
-    
-}
+//extension AppDelegate: MessagingDelegate{
+//    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+//        NSLog("Sharpsell Parent App: Firebase registration token from iOS: \(String(describing: fcmToken))")
+//        
+//        let dataDict: [String: String] = ["token": fcmToken ?? ""]
+//        NotificationCenter.default.post(
+//            name: Notification.Name("FCMToken"),
+//            object: nil,
+//            userInfo: dataDict
+//        )
+//        
+//        if let token = fcmToken {
+//            print(token)
+//            defaults.set(String(describing: token), forKey: "fcmToken")
+//        } else {
+//            NSLog("Sharpsell Parent App: Firebase token is empty ⚠️")
+//        }
+//    }
+//    
+//}

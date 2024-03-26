@@ -7,6 +7,7 @@
 
 import UIKit
 import SharpsellCore
+import AVFoundation
 //import moengage_flutter
 //import MoEngageSDK
 
@@ -20,11 +21,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var sharpsellAPIKeyTxtField: UITextField!
     
     //MARK: - Property Declration
-    var sharpsellReleaseVersion = "One SDK beta 3 - Ultron - 3.10.0"
+    var sharpsellReleaseVersion = "3.14.1"
     
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.initalSetup()
     }
     
