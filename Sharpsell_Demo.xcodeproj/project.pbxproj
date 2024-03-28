@@ -8,14 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D83784B52BB2B1F200054B0B /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = D83784B42BB2B1F200054B0B /* SharpsellCore */; };
-		D83784BA2BB2B8A200054B0B /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83784B62BB2B8A100054B0B /* FBLPromises.xcframework */; };
-		D83784BB2BB2B8A200054B0B /* FBLPromises.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D83784B62BB2B8A100054B0B /* FBLPromises.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D83784BC2BB2B8A200054B0B /* FMDB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83784B72BB2B8A100054B0B /* FMDB.xcframework */; };
-		D83784BD2BB2B8A200054B0B /* FMDB.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D83784B72BB2B8A100054B0B /* FMDB.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D83784BE2BB2B8A200054B0B /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83784B82BB2B8A100054B0B /* App.xcframework */; };
-		D83784BF2BB2B8A200054B0B /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D83784B82BB2B8A100054B0B /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D83784C02BB2B8A200054B0B /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83784B92BB2B8A200054B0B /* Flutter.xcframework */; };
-		D83784C12BB2B8A200054B0B /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D83784B92BB2B8A200054B0B /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8608B0F27CD182800E36B26 /* CockpitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8608AF527CD182800E36B26 /* CockpitViewController.swift */; };
 		D8608B1027CD182800E36B26 /* CockpitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8608AF827CD182800E36B26 /* CockpitModel.swift */; };
 		D8608B1127CD182800E36B26 /* CommonTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8608AFC27CD182800E36B26 /* CommonTableCell.swift */; };
@@ -41,11 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D83784C12BB2B8A200054B0B /* Flutter.xcframework in Embed Frameworks */,
-				D83784BD2BB2B8A200054B0B /* FMDB.xcframework in Embed Frameworks */,
-				D83784BB2BB2B8A200054B0B /* FBLPromises.xcframework in Embed Frameworks */,
 				D89A97392BA1801400910240 /* XCTest.framework in Embed Frameworks */,
-				D83784BF2BB2B8A200054B0B /* App.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,14 +41,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D83784A72BB2AF5700054B0B /* FBLPromises.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBLPromises.xcframework; path = "../../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/sharpsell/Release/FBLPromises.xcframework"; sourceTree = "<group>"; };
-		D83784A82BB2AF5700054B0B /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "../../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/sharpsell/Release/Flutter.xcframework"; sourceTree = "<group>"; };
-		D83784A92BB2AF5700054B0B /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "../../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/sharpsell/Release/App.xcframework"; sourceTree = "<group>"; };
-		D83784AA2BB2AF5700054B0B /* FMDB.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FMDB.xcframework; path = "../../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/sharpsell/Release/FMDB.xcframework"; sourceTree = "<group>"; };
-		D83784B62BB2B8A100054B0B /* FBLPromises.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBLPromises.xcframework; path = "../../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/sharpsell/Debug/FBLPromises.xcframework"; sourceTree = "<group>"; };
-		D83784B72BB2B8A100054B0B /* FMDB.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FMDB.xcframework; path = "../../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/sharpsell/Debug/FMDB.xcframework"; sourceTree = "<group>"; };
-		D83784B82BB2B8A100054B0B /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "../../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/sharpsell/Debug/App.xcframework"; sourceTree = "<group>"; };
-		D83784B92BB2B8A200054B0B /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "../../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/sharpsell/Debug/Flutter.xcframework"; sourceTree = "<group>"; };
 		D8608ADB27CD17D300E36B26 /* Sharpsell_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharpsell_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8608AEC27CD17D400E36B26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8608AF527CD182800E36B26 /* CockpitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CockpitViewController.swift; sourceTree = "<group>"; };
@@ -85,13 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D83784C02BB2B8A200054B0B /* Flutter.xcframework in Frameworks */,
-				D83784BC2BB2B8A200054B0B /* FMDB.xcframework in Frameworks */,
-				D83784BE2BB2B8A200054B0B /* App.xcframework in Frameworks */,
 				D89A97352BA17DC100910240 /* FirebaseMessaging in Frameworks */,
 				D83784B52BB2B1F200054B0B /* SharpsellCore in Frameworks */,
 				D89A97312BA17DC100910240 /* FirebaseAnalytics in Frameworks */,
-				D83784BA2BB2B8A200054B0B /* FBLPromises.xcframework in Frameworks */,
 				D89A97332BA17DC100910240 /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,14 +261,6 @@
 		D8608B1B27CD184A00E36B26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D83784A92BB2AF5700054B0B /* App.xcframework */,
-				D83784B82BB2B8A100054B0B /* App.xcframework */,
-				D83784A72BB2AF5700054B0B /* FBLPromises.xcframework */,
-				D83784A82BB2AF5700054B0B /* Flutter.xcframework */,
-				D83784B92BB2B8A200054B0B /* Flutter.xcframework */,
-				D83784AA2BB2AF5700054B0B /* FMDB.xcframework */,
-				D83784B62BB2B8A100054B0B /* FBLPromises.xcframework */,
-				D83784B72BB2B8A100054B0B /* FMDB.xcframework */,
 				D89A97362BA17FAD00910240 /* XCTest.framework */,
 			);
 			name = Frameworks;
@@ -522,7 +490,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_ENTITLEMENTS = Sharpsell_Demo/Sharpsell_Demo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = J8YRGNHWN4;
 				ENABLE_BITCODE = NO;
@@ -567,7 +535,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_ENTITLEMENTS = Sharpsell_Demo/Sharpsell_Demo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = J8YRGNHWN4;
 				ENABLE_BITCODE = NO;
