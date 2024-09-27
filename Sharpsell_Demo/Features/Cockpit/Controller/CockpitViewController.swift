@@ -43,7 +43,7 @@ class CockpitViewController: UIViewController {
                                      CockpitModel(contentType: .customUrl, contentRoute: ""),
                                      CockpitModel(contentType: .home, contentRoute: ""),
                                      CockpitModel(contentType: .launchPad, contentRoute: "launchpad"),
-                                     CockpitModel(contentType: .marketingCollteral, contentRoute: "https://mhril.enparadigmtech.com/app/#/externalplugin/persona-presentation?"),
+                                     CockpitModel(contentType: .marketingCollteral, contentRoute: "mcDirectory"),
                                      CockpitModel(contentType: .posterOfTheDay, contentRoute: "potd"),
                                      CockpitModel(contentType: .dvc, contentRoute: "dvc"),
                                      CockpitModel(contentType: .timerChallenge, contentRoute: "tcHome"),
