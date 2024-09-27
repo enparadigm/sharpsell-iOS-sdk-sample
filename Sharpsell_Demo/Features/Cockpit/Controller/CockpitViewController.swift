@@ -12,6 +12,7 @@ import AVFoundation
 
 enum ContentType: String{
     case presentation
+    case customUrl
     case home = "Sharpsell Home"
     case launchPad = "Launch Pad"
     case marketingCollteral = "Marketing Collteral"
@@ -33,13 +34,16 @@ class CockpitViewController: UIViewController {
     var presentationInputName: String = ""
     var presentationInputOne: String = ""
     var presentationInputTwo: String = ""
+    var customUrl: String = ""
     
     // MARK: - Property Declaration
+    
     static let identifier = "CockpitViewController"
     let contents: [CockpitModel] =  [CockpitModel(contentType: .presentation, contentRoute: "productPresentationInput"),
+                                     CockpitModel(contentType: .customUrl, contentRoute: ""),
                                      CockpitModel(contentType: .home, contentRoute: ""),
                                      CockpitModel(contentType: .launchPad, contentRoute: "launchpad"),
-                                     CockpitModel(contentType: .marketingCollteral, contentRoute: "mcDirectory"),
+                                     CockpitModel(contentType: .marketingCollteral, contentRoute: "https://mhril.enparadigmtech.com/app/#/externalplugin/persona-presentation?"),
                                      CockpitModel(contentType: .posterOfTheDay, contentRoute: "potd"),
                                      CockpitModel(contentType: .dvc, contentRoute: "dvc"),
                                      CockpitModel(contentType: .timerChallenge, contentRoute: "tcHome"),
@@ -106,6 +110,8 @@ class CockpitViewController: UIViewController {
         
         tableView.register(UINib(nibName: PresentationTableViewCell.reuseId, bundle: nil),
                            forCellReuseIdentifier: PresentationTableViewCell.reuseId)
+        tableView.register(CustomRouteTableCell.self,
+                           forCellReuseIdentifier: CustomRouteTableCell.reuseId)
         tableView.register(CommonTableCell.self,
                            forCellReuseIdentifier: CommonTableCell.reuseId)
     }
@@ -148,6 +154,11 @@ class CockpitViewController: UIViewController {
         openSmartSkill(with: presentationArgs)
     }
     
+    @objc func openCustomUrlTapped(_ sender: UIButton){
+        let presentationArgs = ["route" : customUrl]
+        openSmartSkill(with: presentationArgs)
+    }
+    
 }
 
 extension CockpitViewController: UITableViewDelegate, UITableViewDataSource{
@@ -176,6 +187,13 @@ extension CockpitViewController: UITableViewDelegate, UITableViewDataSource{
             presentationCell.openPresentationBtn.addTarget(self, action: #selector(openPresentationTapped(_:)),
                                                            for: .touchUpInside)
             return presentationCell
+        case .customUrl:
+            guard let commonTableCell = tableView.dequeueReusableCell(withIdentifier: CustomRouteTableCell.reuseId, for: indexPath) as? CustomRouteTableCell else {return UITableViewCell()}
+            commonTableCell.selectionStyle = .none
+            commonTableCell.customURLTextField.delegate = self
+            commonTableCell.customURLTextField.tag = 22;
+            commonTableCell.openCustomRouteButton.addTarget(self, action: #selector(openCustomUrlTapped(_:)),for: .touchUpInside)
+            return commonTableCell
         default:
             guard let commonTableCell = tableView.dequeueReusableCell(withIdentifier: CommonTableCell.reuseId, for: indexPath) as? CommonTableCell else {return UITableViewCell()}
             commonTableCell.selectionStyle = .none
@@ -187,6 +205,8 @@ extension CockpitViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch contents[indexPath.row].contentType {
         case .presentation:
+            break
+        case .customUrl:
             break
         case .home:
             openSmartSkill(with: nil)
@@ -217,6 +237,8 @@ extension CockpitViewController: UITextFieldDelegate{
             self.presentationInputOne = text
         case 13:
             self.presentationInputTwo = text
+        case 22:
+            self.customUrl = text
         default:
             break
         }

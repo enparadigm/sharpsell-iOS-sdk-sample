@@ -199,22 +199,22 @@ extension AppDelegate: UNUserNotificationCenterDelegate{
     func application(_ application: UIApplication,
                      didReceiveRemoteNotification userInfo: [AnyHashable : Any],
                      fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-//        NSLog("Sharpsell Parent App: did recive silent notifications - didReceiveRemoteNotification")
-//        NSLog("Sharpsell Parent App: userInfo - \(userInfo)")
-//        
-//        Sharpsell.services.isSharpsellNotification(notificationPayLoad: userInfo) { isSharpsellNotification in
-//            Sharpsell.services.setNotificationDataWhenDidReceiveRemoteNotification(application, userInfo)
-//            if isSharpsellNotification{
-//                Sharpsell.services.showNotification(notificationPayLoad: userInfo) {
-//                    NSLog("Sharpsell Parent App- Notification showed successfully 🥳")
-//                } onFailure: { message, errorType in
-//                    NSLog("Sharpsell Parent App: showNotification Failed - \(errorType) and  \(message)")
-//                }
-//            }
-//            
-//        } onFailure: { message, errorType in
-//            NSLog("Sharpsell Parent App - error in validation sharpsell notifccation - \(message)")
-//        }
+        NSLog("Sharpsell Parent App: did recive silent notifications - didReceiveRemoteNotification")
+        NSLog("Sharpsell Parent App: userInfo - \(userInfo)")
+        
+        Sharpsell.services.isSharpsellNotification(notificationPayLoad: userInfo) { isSharpsellNotification in
+            Sharpsell.services.setNotificationDataWhenDidReceiveRemoteNotification(application, userInfo)
+            if isSharpsellNotification{
+                Sharpsell.services.showNotification(notificationPayLoad: userInfo) {
+                    NSLog("Sharpsell Parent App- Notification showed successfully 🥳")
+                } onFailure: { message, errorType in
+                    NSLog("Sharpsell Parent App: showNotification Failed - \(errorType) and  \(message)")
+                }
+            }
+            
+        } onFailure: { message, errorType in
+            NSLog("Sharpsell Parent App - error in validation sharpsell notifccation - \(message)")
+        }
     }
     
     

@@ -3,4 +3,225 @@
    uuid = "D5E41916-DFB1-470E-B9F4-4A3850B6D088"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38AE96D1-8A16-4141-B5B6-2ED78A39F0D8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sharpsell_Demo/Features/Cockpit/Controller/CockpitViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "openCustomUrlTapped(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "38AE96D1-8A16-4141-B5B6-2ED78A39F0D8 - 34663337eb409c0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sharpsell_Demo.CockpitViewController.openCustomUrlTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Sharpsell_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/Enparadigm/Projects/SharpShell/SharpSellSDK/Sharpsell_Demo/Sharpsell_Demo/Features/Cockpit/Controller/CockpitViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "38AE96D1-8A16-4141-B5B6-2ED78A39F0D8 - b9375ba245f3e309"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc Sharpsell_Demo.CockpitViewController.openCustomUrlTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Sharpsell_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/Enparadigm/Projects/SharpShell/SharpSellSDK/Sharpsell_Demo/Sharpsell_Demo/Features/Cockpit/Controller/CockpitViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "38AE96D1-8A16-4141-B5B6-2ED78A39F0D8 - 34663337eb409c62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sharpsell_Demo.CockpitViewController.openCustomUrlTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Sharpsell_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/Enparadigm/Projects/SharpShell/SharpSellSDK/Sharpsell_Demo/Sharpsell_Demo/Features/Cockpit/Controller/CockpitViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "159"
+                  endingLineNumber = "159"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "38AE96D1-8A16-4141-B5B6-2ED78A39F0D8 - b9375ba245f3e366"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc Sharpsell_Demo.CockpitViewController.openCustomUrlTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Sharpsell_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/Enparadigm/Projects/SharpShell/SharpSellSDK/Sharpsell_Demo/Sharpsell_Demo/Features/Cockpit/Controller/CockpitViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "159"
+                  endingLineNumber = "159"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB7B6DFB-072A-4DB8-8EAB-E2F9B4160777"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sharpsell_Demo/Features/Cockpit/Controller/CockpitViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "openCustomUrlTapped(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AB7B6DFB-072A-4DB8-8EAB-E2F9B4160777 - 34663337eb409c2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sharpsell_Demo.CockpitViewController.openCustomUrlTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Sharpsell_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/Enparadigm/Projects/SharpShell/SharpSellSDK/Sharpsell_Demo/Sharpsell_Demo/Features/Cockpit/Controller/CockpitViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "AB7B6DFB-072A-4DB8-8EAB-E2F9B4160777 - b9375ba245f3e328"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc Sharpsell_Demo.CockpitViewController.openCustomUrlTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Sharpsell_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/Enparadigm/Projects/SharpShell/SharpSellSDK/Sharpsell_Demo/Sharpsell_Demo/Features/Cockpit/Controller/CockpitViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "AB7B6DFB-072A-4DB8-8EAB-E2F9B4160777 - 34663337eb409c0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sharpsell_Demo.CockpitViewController.openCustomUrlTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Sharpsell_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/Enparadigm/Projects/SharpShell/SharpSellSDK/Sharpsell_Demo/Sharpsell_Demo/Features/Cockpit/Controller/CockpitViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "AB7B6DFB-072A-4DB8-8EAB-E2F9B4160777 - b9375ba245f3e309"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc Sharpsell_Demo.CockpitViewController.openCustomUrlTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Sharpsell_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/Enparadigm/Projects/SharpShell/SharpSellSDK/Sharpsell_Demo/Sharpsell_Demo/Features/Cockpit/Controller/CockpitViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7177C904-66F0-48D7-AA62-A97EFD257264"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sharpsell_Demo/Features/Cockpit/Controller/CockpitViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "241"
+            endingLineNumber = "241"
+            landmarkName = "textFieldDidEndEditing(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7177C904-66F0-48D7-AA62-A97EFD257264 - f7e48aee0485798c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sharpsell_Demo.CockpitViewController.textFieldDidEndEditing(__C.UITextField) -&gt; ()"
+                  moduleName = "Sharpsell_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/Enparadigm/Projects/SharpShell/SharpSellSDK/Sharpsell_Demo/Sharpsell_Demo/Features/Cockpit/Controller/CockpitViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "239"
+                  endingLineNumber = "239"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "7177C904-66F0-48D7-AA62-A97EFD257264 - f7e48aee0485798c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sharpsell_Demo.CockpitViewController.textFieldDidEndEditing(__C.UITextField) -&gt; ()"
+                  moduleName = "Sharpsell_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/Enparadigm/Projects/SharpShell/SharpSellSDK/Sharpsell_Demo/Sharpsell_Demo/Features/Cockpit/Controller/CockpitViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "239"
+                  endingLineNumber = "239"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  uuid = "7177C904-66F0-48D7-AA62-A97EFD257264 - f7e48aee048579ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sharpsell_Demo.CockpitViewController.textFieldDidEndEditing(__C.UITextField) -&gt; ()"
+                  moduleName = "Sharpsell_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/Enparadigm/Projects/SharpShell/SharpSellSDK/Sharpsell_Demo/Sharpsell_Demo/Features/Cockpit/Controller/CockpitViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "241"
+                  endingLineNumber = "241"
+                  offsetFromSymbolStart = "252">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
