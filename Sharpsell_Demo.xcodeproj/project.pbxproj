@@ -7,6 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8403FB4D2DA3E7C300076606 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8403FB4C2DA3E7C300076606 /* SharpsellCore */; };
+		8403FB682DA3F19700076606 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8403FB672DA3F19700076606 /* SharpsellCore */; };
+		841354DC2DD92239006DA825 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 841354DB2DD92239006DA825 /* SharpsellCore */; };
+		8416317F2DDA2A9C00C1FE62 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8416317E2DDA2A9C00C1FE62 /* SharpsellCore */; };
+		8416318B2DDA46E000C1FE62 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8416318A2DDA46E000C1FE62 /* SharpsellCore */; };
+		8416D3E72DA3BBC500086014 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8416D3E62DA3BBC500086014 /* SharpsellCore */; };
+		8419658C2D788A83004D552A /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8419658B2D788A83004D552A /* SharpsellCore */; };
+		843476572DD8D5A700BEDEEA /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 843476562DD8D5A700BEDEEA /* SharpsellCore */; };
+		844BAA182D6F1FA200177B96 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 844BAA172D6F1FA200177B96 /* SharpsellCore */; };
+		844BAA242D6F2BA400177B96 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 844BAA232D6F2BA400177B96 /* SharpsellCore */; };
+		845F0B432D9514EA00E838C9 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 845F0B422D9514EA00E838C9 /* SharpsellCore */; };
+		846892E92DD8D0050062FD41 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 846892E82DD8D0050062FD41 /* SharpsellCore */; };
+		846948FC2DA6642E003F149B /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 846948FB2DA6642E003F149B /* SharpsellCore */; };
+		846948FF2DA66862003F149B /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 846948FE2DA66862003F149B /* SharpsellCore */; };
+		846949022DA68684003F149B /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 846949012DA68684003F149B /* SharpsellCore */; };
+		846B9FF02DDA4C6C00631CF4 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 846B9FEF2DDA4C6C00631CF4 /* SharpsellCore */; };
+		847FD6AD2DA5370E007D4BA8 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 847FD6AC2DA5370E007D4BA8 /* SharpsellCore */; };
+		847FD6D12DA53B25007D4BA8 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 847FD6D02DA53B25007D4BA8 /* SharpsellCore */; };
+		84843C6B2D79445700FE215C /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84843C6A2D79445700FE215C /* SharpsellCore */; };
+		84843C6E2D79465100FE215C /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84843C6D2D79465100FE215C /* SharpsellCore */; };
+		84843C712D79474C00FE215C /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84843C702D79474C00FE215C /* SharpsellCore */; };
+		84843C752D7948BE00FE215C /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84843C742D7948BE00FE215C /* SharpsellCore */; };
+		84843C782D7957FC00FE215C /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84843C772D7957FC00FE215C /* SharpsellCore */; };
+		84843C7B2D79584E00FE215C /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84843C7A2D79584E00FE215C /* SharpsellCore */; };
+		84843C7E2D795B4900FE215C /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84843C7D2D795B4900FE215C /* SharpsellCore */; };
+		84843C812D79836A00FE215C /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84843C802D79836A00FE215C /* SharpsellCore */; };
+		84843C842D7989AE00FE215C /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84843C832D7989AE00FE215C /* SharpsellCore */; };
+		84843C872D7989E200FE215C /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84843C862D7989E200FE215C /* SharpsellCore */; };
+		84843C8A2D79928E00FE215C /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84843C892D79928E00FE215C /* SharpsellCore */; };
+		8487E4512DD8B829000E9DDC /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8487E4502DD8B829000E9DDC /* SharpsellCore */; };
+		8487E4542DD8C635000E9DDC /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8487E4532DD8C635000E9DDC /* SharpsellCore */; };
+		84969B322DC1F0EA00CBE327 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84969B312DC1F0EA00CBE327 /* SharpsellCore */; };
+		849B64392DD917DA00180761 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 849B64382DD917DA00180761 /* SharpsellCore */; };
+		84B2CBE02DD8CEF000C87A67 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84B2CBDF2DD8CEF000C87A67 /* SharpsellCore */; };
+		84B589E02DD74B1500FF1FF5 /* daily_flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B589DF2DD74B1500FF1FF5 /* daily_flutter.xcframework */; };
+		84B589E12DD74B1500FF1FF5 /* daily_flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B589DF2DD74B1500FF1FF5 /* daily_flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84C0FDDF2DDA1DEE00951C6F /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84C0FDDE2DDA1DEE00951C6F /* SharpsellCore */; };
+		84D08D5E2DD8F81C00E1E66B /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84D08D5D2DD8F81C00E1E66B /* SharpsellCore */; };
+		84D6B84A2DC8E015004058CB /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84D6B8492DC8E015004058CB /* SharpsellCore */; };
+		84DF5DBF2DD7D5F100862DD5 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84DF5DBE2DD7D5F100862DD5 /* SharpsellCore */; };
+		84EE715B2DD9CF5500E7C4E6 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84EE715A2DD9CF5500E7C4E6 /* SharpsellCore */; };
+		84F565802DD8B0BA0005FA63 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84F5657F2DD8B0BA0005FA63 /* SharpsellCore */; };
+		84FA81DF2DDA233D001B8A19 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84FA81DE2DDA233D001B8A19 /* SharpsellCore */; };
+		84FB6E7B2DDA646800DAD0A9 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84FB6E7A2DDA646800DAD0A9 /* SharpsellCore */; };
+		84FDAC482DDA6E04002E936F /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84FDAC472DDA6E04002E936F /* SharpsellCore */; };
+		84FDAC5E2DDB3C1A002E936F /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FDAC5B2DDB3C1A002E936F /* App.xcframework */; };
+		84FDAC5F2DDB3C1A002E936F /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84FDAC5B2DDB3C1A002E936F /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84FDAC602DDB3C1A002E936F /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FDAC5C2DDB3C1A002E936F /* Flutter.xcframework */; };
+		84FDAC612DDB3C1A002E936F /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84FDAC5C2DDB3C1A002E936F /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84FDAC622DDB3C1A002E936F /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FDAC5D2DDB3C1A002E936F /* FBLPromises.xcframework */; };
+		84FDAC632DDB3C1A002E936F /* FBLPromises.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84FDAC5D2DDB3C1A002E936F /* FBLPromises.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84FF38302DD8B76800E77A50 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84FF382F2DD8B76800E77A50 /* SharpsellCore */; };
 		D828A7592C450AE70098C2E3 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = D828A7582C450AE70098C2E3 /* SharpsellCore */; };
 		D839EC3C2CA07ACE00E9FE4F /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = D839EC3B2CA07ACE00E9FE4F /* SharpsellCore */; };
 		D8608B0F27CD182800E36B26 /* CockpitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8608AF527CD182800E36B26 /* CockpitViewController.swift */; };
@@ -22,7 +74,6 @@
 		D8710D4A2C1883D5008A763B /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = D8710D492C1883D5008A763B /* SharpsellCore */; };
 		D8710D6B2C19751D008A763B /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = D8710D6A2C19751D008A763B /* SharpsellCore */; };
 		D89A333B2B9EF1B100689007 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D89A333A2B9EF1B000689007 /* GoogleService-Info.plist */; };
-		D89A97392BA1801400910240 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D89A97362BA17FAD00910240 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8D24B862C107AAB009DD8FC /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = D8D24B852C107AAB009DD8FC /* SharpsellCore */; };
 		D8D24B892C107B0F009DD8FC /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = D8D24B882C107B0F009DD8FC /* SharpsellCore */; };
 		D8D329EC2C046B1D00495E83 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D8D329EB2C046B1D00495E83 /* FirebaseAnalytics */; };
@@ -55,12 +106,6 @@
 		D8D32A222C046B1D00495E83 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = D8D32A212C046B1D00495E83 /* FirebaseVertexAI-Preview */; };
 		D8E2A5472C1B41AB0045EA42 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = D8E2A5462C1B41AB0045EA42 /* SharpsellCore */; };
 		D8E2AF142CA6C9AB008E0D10 /* SharpsellCore in Frameworks */ = {isa = PBXBuildFile; productRef = D8E2AF132CA6C9AB008E0D10 /* SharpsellCore */; };
-		D8E2AF182CA6C9B6008E0D10 /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E2AF152CA6C9B6008E0D10 /* FBLPromises.xcframework */; };
-		D8E2AF192CA6C9B6008E0D10 /* FBLPromises.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8E2AF152CA6C9B6008E0D10 /* FBLPromises.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D8E2AF1A2CA6C9B6008E0D10 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E2AF162CA6C9B6008E0D10 /* Flutter.xcframework */; };
-		D8E2AF1B2CA6C9B6008E0D10 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8E2AF162CA6C9B6008E0D10 /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D8E2AF1C2CA6C9B6008E0D10 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E2AF172CA6C9B6008E0D10 /* App.xcframework */; };
-		D8E2AF1D2CA6C9B6008E0D10 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8E2AF172CA6C9B6008E0D10 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8E2AF2B2CA6D4BA008E0D10 /* PresentationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E2AF282CA6D4A7008E0D10 /* PresentationTableViewCell.swift */; };
 		D8E2AF2E2CA6D541008E0D10 /* CustomURLTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E2AF2C2CA6D4D5008E0D10 /* CustomURLTableViewCell.xib */; };
 		D8E2AF2F2CA6D543008E0D10 /* CustomURLTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E2AF2D2CA6D4D5008E0D10 /* CustomURLTableViewCell.swift */; };
@@ -74,10 +119,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D8E2AF1B2CA6C9B6008E0D10 /* Flutter.xcframework in Embed Frameworks */,
-				D8E2AF1D2CA6C9B6008E0D10 /* App.xcframework in Embed Frameworks */,
-				D89A97392BA1801400910240 /* XCTest.framework in Embed Frameworks */,
-				D8E2AF192CA6C9B6008E0D10 /* FBLPromises.xcframework in Embed Frameworks */,
+				84FDAC632DDB3C1A002E936F /* FBLPromises.xcframework in Embed Frameworks */,
+				84FDAC612DDB3C1A002E936F /* Flutter.xcframework in Embed Frameworks */,
+				84B589E12DD74B1500FF1FF5 /* daily_flutter.xcframework in Embed Frameworks */,
+				84FDAC5F2DDB3C1A002E936F /* App.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +130,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		84B589DF2DD74B1500FF1FF5 /* daily_flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = daily_flutter.xcframework; path = ../../daily_flutter.xcframework; sourceTree = "<group>"; };
+		84FDAC5B2DDB3C1A002E936F /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/Release/App.xcframework"; sourceTree = "<group>"; };
+		84FDAC5C2DDB3C1A002E936F /* Flutter.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:S8QB4VV633:FLUTTER.IO LLC"; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/Release/Flutter.xcframework"; sourceTree = "<group>"; };
+		84FDAC5D2DDB3C1A002E936F /* FBLPromises.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBLPromises.xcframework; path = "../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/Release/FBLPromises.xcframework"; sourceTree = "<group>"; };
 		D8608ADB27CD17D300E36B26 /* Sharpsell_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharpsell_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8608AEC27CD17D400E36B26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8608AF527CD182800E36B26 /* CockpitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CockpitViewController.swift; sourceTree = "<group>"; };
@@ -100,10 +149,6 @@
 		D8608B0E27CD182800E36B26 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D86B853228DD71FB00B0D612 /* Sharpsell_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sharpsell_Demo.entitlements; sourceTree = "<group>"; };
 		D89A333A2B9EF1B000689007 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D89A97362BA17FAD00910240 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D8E2AF152CA6C9B6008E0D10 /* FBLPromises.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBLPromises.xcframework; path = "../../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/Release/FBLPromises.xcframework"; sourceTree = "<group>"; };
-		D8E2AF162CA6C9B6008E0D10 /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "../../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/Release/Flutter.xcframework"; sourceTree = "<group>"; };
-		D8E2AF172CA6C9B6008E0D10 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "../../sharp-sell/sdk/iOS/Frameworks/Local_Frameworks/Release/App.xcframework"; sourceTree = "<group>"; };
 		D8E2AF282CA6D4A7008E0D10 /* PresentationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationTableViewCell.swift; sourceTree = "<group>"; };
 		D8E2AF2C2CA6D4D5008E0D10 /* CustomURLTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomURLTableViewCell.xib; sourceTree = "<group>"; };
 		D8E2AF2D2CA6D4D5008E0D10 /* CustomURLTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomURLTableViewCell.swift; sourceTree = "<group>"; };
@@ -115,22 +160,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84843C872D7989E200FE215C /* SharpsellCore in Frameworks */,
 				D8D32A002C046B1D00495E83 /* FirebaseDatabaseSwift in Frameworks */,
+				847FD6AD2DA5370E007D4BA8 /* SharpsellCore in Frameworks */,
 				D8D32A182C046B1D00495E83 /* FirebasePerformance in Frameworks */,
+				84FDAC482DDA6E04002E936F /* SharpsellCore in Frameworks */,
+				84969B322DC1F0EA00CBE327 /* SharpsellCore in Frameworks */,
+				846948FF2DA66862003F149B /* SharpsellCore in Frameworks */,
 				D8D24B862C107AAB009DD8FC /* SharpsellCore in Frameworks */,
+				8403FB4D2DA3E7C300076606 /* SharpsellCore in Frameworks */,
 				D8D32A1A2C046B1D00495E83 /* FirebaseRemoteConfig in Frameworks */,
+				8487E4512DD8B829000E9DDC /* SharpsellCore in Frameworks */,
+				84843C7B2D79584E00FE215C /* SharpsellCore in Frameworks */,
+				8416D3E72DA3BBC500086014 /* SharpsellCore in Frameworks */,
+				8419658C2D788A83004D552A /* SharpsellCore in Frameworks */,
+				84843C812D79836A00FE215C /* SharpsellCore in Frameworks */,
 				D8710D4A2C1883D5008A763B /* SharpsellCore in Frameworks */,
+				84B2CBE02DD8CEF000C87A67 /* SharpsellCore in Frameworks */,
+				846B9FF02DDA4C6C00631CF4 /* SharpsellCore in Frameworks */,
 				D8D329EE2C046B1D00495E83 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				84F565802DD8B0BA0005FA63 /* SharpsellCore in Frameworks */,
+				84843C8A2D79928E00FE215C /* SharpsellCore in Frameworks */,
 				D8D32A122C046B1D00495E83 /* FirebaseInstallations in Frameworks */,
+				847FD6D12DA53B25007D4BA8 /* SharpsellCore in Frameworks */,
 				D8D32A062C046B1D00495E83 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				D8D32A102C046B1D00495E83 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				84843C752D7948BE00FE215C /* SharpsellCore in Frameworks */,
 				D8D32A142C046B1D00495E83 /* FirebaseMLModelDownloader in Frameworks */,
 				D8710D6B2C19751D008A763B /* SharpsellCore in Frameworks */,
 				D8D32A162C046B1D00495E83 /* FirebaseMessaging in Frameworks */,
-				D8E2AF1A2CA6C9B6008E0D10 /* Flutter.xcframework in Frameworks */,
+				84FDAC602DDB3C1A002E936F /* Flutter.xcframework in Frameworks */,
+				846949022DA68684003F149B /* SharpsellCore in Frameworks */,
+				84FB6E7B2DDA646800DAD0A9 /* SharpsellCore in Frameworks */,
+				849B64392DD917DA00180761 /* SharpsellCore in Frameworks */,
+				84DF5DBF2DD7D5F100862DD5 /* SharpsellCore in Frameworks */,
 				D8E2AF142CA6C9AB008E0D10 /* SharpsellCore in Frameworks */,
 				D8D32A082C046B1D00495E83 /* FirebaseFirestoreSwift in Frameworks */,
+				84FF38302DD8B76800E77A50 /* SharpsellCore in Frameworks */,
+				84843C712D79474C00FE215C /* SharpsellCore in Frameworks */,
+				844BAA242D6F2BA400177B96 /* SharpsellCore in Frameworks */,
 				D8D32A042C046B1D00495E83 /* FirebaseFirestore in Frameworks */,
+				8416317F2DDA2A9C00C1FE62 /* SharpsellCore in Frameworks */,
+				84EE715B2DD9CF5500E7C4E6 /* SharpsellCore in Frameworks */,
 				D8D32A0A2C046B1D00495E83 /* FirebaseFunctions in Frameworks */,
 				D8D329F02C046B1D00495E83 /* FirebaseAnalyticsSwift in Frameworks */,
 				D8D32A222C046B1D00495E83 /* FirebaseVertexAI-Preview in Frameworks */,
@@ -138,21 +209,40 @@
 				D8D24B892C107B0F009DD8FC /* SharpsellCore in Frameworks */,
 				D8D329FA2C046B1D00495E83 /* FirebaseAuthCombine-Community in Frameworks */,
 				D8D329F82C046B1D00495E83 /* FirebaseAuth in Frameworks */,
+				8403FB682DA3F19700076606 /* SharpsellCore in Frameworks */,
 				D8D32A0C2C046B1D00495E83 /* FirebaseFunctionsCombine-Community in Frameworks */,
+				8487E4542DD8C635000E9DDC /* SharpsellCore in Frameworks */,
 				D8D329FC2C046B1D00495E83 /* FirebaseCrashlytics in Frameworks */,
 				D8D32A022C046B1D00495E83 /* FirebaseDynamicLinks in Frameworks */,
-				D8E2AF1C2CA6C9B6008E0D10 /* App.xcframework in Frameworks */,
-				D8E2AF182CA6C9B6008E0D10 /* FBLPromises.xcframework in Frameworks */,
+				84C0FDDF2DDA1DEE00951C6F /* SharpsellCore in Frameworks */,
+				84B589E02DD74B1500FF1FF5 /* daily_flutter.xcframework in Frameworks */,
+				84FDAC622DDB3C1A002E936F /* FBLPromises.xcframework in Frameworks */,
+				8416318B2DDA46E000C1FE62 /* SharpsellCore in Frameworks */,
+				84843C6E2D79465100FE215C /* SharpsellCore in Frameworks */,
+				846892E92DD8D0050062FD41 /* SharpsellCore in Frameworks */,
 				D8D32A1E2C046B1D00495E83 /* FirebaseStorage in Frameworks */,
+				84FDAC5E2DDB3C1A002E936F /* App.xcframework in Frameworks */,
 				D8D32A0E2C046B1D00495E83 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				843476572DD8D5A700BEDEEA /* SharpsellCore in Frameworks */,
 				D828A7592C450AE70098C2E3 /* SharpsellCore in Frameworks */,
 				D8D32A1C2C046B1D00495E83 /* FirebaseRemoteConfigSwift in Frameworks */,
 				D8D329F62C046B1D00495E83 /* FirebaseAppDistribution-Beta in Frameworks */,
+				84843C7E2D795B4900FE215C /* SharpsellCore in Frameworks */,
 				D8E2A5472C1B41AB0045EA42 /* SharpsellCore in Frameworks */,
 				D8D32A202C046B1D00495E83 /* FirebaseStorageCombine-Community in Frameworks */,
+				84FA81DF2DDA233D001B8A19 /* SharpsellCore in Frameworks */,
 				D839EC3C2CA07ACE00E9FE4F /* SharpsellCore in Frameworks */,
+				84843C6B2D79445700FE215C /* SharpsellCore in Frameworks */,
+				844BAA182D6F1FA200177B96 /* SharpsellCore in Frameworks */,
+				84843C782D7957FC00FE215C /* SharpsellCore in Frameworks */,
+				84D08D5E2DD8F81C00E1E66B /* SharpsellCore in Frameworks */,
 				D8D329F42C046B1D00495E83 /* FirebaseAppCheck in Frameworks */,
 				D8D329FE2C046B1D00495E83 /* FirebaseDatabase in Frameworks */,
+				84D6B84A2DC8E015004058CB /* SharpsellCore in Frameworks */,
+				846948FC2DA6642E003F149B /* SharpsellCore in Frameworks */,
+				841354DC2DD92239006DA825 /* SharpsellCore in Frameworks */,
+				84843C842D7989AE00FE215C /* SharpsellCore in Frameworks */,
+				845F0B432D9514EA00E838C9 /* SharpsellCore in Frameworks */,
 				D8D329F22C046B1D00495E83 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,10 +437,10 @@
 		D8608B1B27CD184A00E36B26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D8E2AF172CA6C9B6008E0D10 /* App.xcframework */,
-				D8E2AF152CA6C9B6008E0D10 /* FBLPromises.xcframework */,
-				D8E2AF162CA6C9B6008E0D10 /* Flutter.xcframework */,
-				D89A97362BA17FAD00910240 /* XCTest.framework */,
+				84FDAC5B2DDB3C1A002E936F /* App.xcframework */,
+				84FDAC5D2DDB3C1A002E936F /* FBLPromises.xcframework */,
+				84FDAC5C2DDB3C1A002E936F /* Flutter.xcframework */,
+				84B589DF2DD74B1500FF1FF5 /* daily_flutter.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -419,6 +509,50 @@
 				D828A7582C450AE70098C2E3 /* SharpsellCore */,
 				D839EC3B2CA07ACE00E9FE4F /* SharpsellCore */,
 				D8E2AF132CA6C9AB008E0D10 /* SharpsellCore */,
+				844BAA172D6F1FA200177B96 /* SharpsellCore */,
+				844BAA232D6F2BA400177B96 /* SharpsellCore */,
+				8419658B2D788A83004D552A /* SharpsellCore */,
+				84843C6A2D79445700FE215C /* SharpsellCore */,
+				84843C6D2D79465100FE215C /* SharpsellCore */,
+				84843C702D79474C00FE215C /* SharpsellCore */,
+				84843C742D7948BE00FE215C /* SharpsellCore */,
+				84843C772D7957FC00FE215C /* SharpsellCore */,
+				84843C7A2D79584E00FE215C /* SharpsellCore */,
+				84843C7D2D795B4900FE215C /* SharpsellCore */,
+				84843C802D79836A00FE215C /* SharpsellCore */,
+				84843C832D7989AE00FE215C /* SharpsellCore */,
+				84843C862D7989E200FE215C /* SharpsellCore */,
+				84843C892D79928E00FE215C /* SharpsellCore */,
+				845F0B422D9514EA00E838C9 /* SharpsellCore */,
+				8416D3E62DA3BBC500086014 /* SharpsellCore */,
+				8403FB4C2DA3E7C300076606 /* SharpsellCore */,
+				8403FB672DA3F19700076606 /* SharpsellCore */,
+				847FD6AC2DA5370E007D4BA8 /* SharpsellCore */,
+				847FD6D02DA53B25007D4BA8 /* SharpsellCore */,
+				846948FB2DA6642E003F149B /* SharpsellCore */,
+				846948FE2DA66862003F149B /* SharpsellCore */,
+				846949012DA68684003F149B /* SharpsellCore */,
+				84969B312DC1F0EA00CBE327 /* SharpsellCore */,
+				84D6B8492DC8E015004058CB /* SharpsellCore */,
+				84DF5DBE2DD7D5F100862DD5 /* SharpsellCore */,
+				84F5657F2DD8B0BA0005FA63 /* SharpsellCore */,
+				84FF382F2DD8B76800E77A50 /* SharpsellCore */,
+				8487E4502DD8B829000E9DDC /* SharpsellCore */,
+				8487E4532DD8C635000E9DDC /* SharpsellCore */,
+				84B2CBDF2DD8CEF000C87A67 /* SharpsellCore */,
+				846892E82DD8D0050062FD41 /* SharpsellCore */,
+				843476562DD8D5A700BEDEEA /* SharpsellCore */,
+				84D08D5D2DD8F81C00E1E66B /* SharpsellCore */,
+				849B64382DD917DA00180761 /* SharpsellCore */,
+				841354DB2DD92239006DA825 /* SharpsellCore */,
+				84EE715A2DD9CF5500E7C4E6 /* SharpsellCore */,
+				84C0FDDE2DDA1DEE00951C6F /* SharpsellCore */,
+				84FA81DE2DDA233D001B8A19 /* SharpsellCore */,
+				8416317E2DDA2A9C00C1FE62 /* SharpsellCore */,
+				8416318A2DDA46E000C1FE62 /* SharpsellCore */,
+				846B9FEF2DDA4C6C00631CF4 /* SharpsellCore */,
+				84FB6E7A2DDA646800DAD0A9 /* SharpsellCore */,
+				84FDAC472DDA6E04002E936F /* SharpsellCore */,
 			);
 			productName = Sharpsell_Demo;
 			productReference = D8608ADB27CD17D300E36B26 /* Sharpsell_Demo.app */;
@@ -450,7 +584,7 @@
 			mainGroup = D8608AD227CD17D300E36B26;
 			packageReferences = (
 				D8D329EA2C046B1D00495E83 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				D8E2AF122CA6C9AB008E0D10 /* XCLocalSwiftPackageReference "../SwiftPackage/SharpsellCore" */,
+				84FDAC462DDA6E04002E936F /* XCLocalSwiftPackageReference "../SharpsellCore" */,
 			);
 			productRefGroup = D8608ADC27CD17D300E36B26 /* Products */;
 			projectDirPath = "";
@@ -623,8 +757,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_ENTITLEMENTS = Sharpsell_Demo/Sharpsell_Demo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = J8YRGNHWN4;
 				ENABLE_BITCODE = NO;
@@ -634,6 +769,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sharpsell_Demo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "One SDK";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We want permission to access your camera to set profile picture, set images in presentations, and record videos for Roleplay challenges.";
 				INFOPLIST_KEY_NSContactsUsageDescription = "We want permission to access your contacts to fetch contacts";
@@ -652,10 +788,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.23.0;
+				MARKETING_VERSION = 4.21.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.enparadigm.sharpsell.sdk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharpsell.sdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -669,8 +806,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_ENTITLEMENTS = Sharpsell_Demo/Sharpsell_Demo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = J8YRGNHWN4;
 				ENABLE_BITCODE = NO;
@@ -679,6 +817,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sharpsell_Demo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "One SDK";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We want permission to access your camera to set profile picture, set images in presentations, and record videos for Roleplay challenges.";
 				INFOPLIST_KEY_NSContactsUsageDescription = "We want permission to access your contacts to fetch contacts";
@@ -697,9 +836,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.23.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.enparadigm.sharpsell.sdk;
+				MARKETING_VERSION = 4.21.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharpsell.sdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -730,9 +870,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		D8E2AF122CA6C9AB008E0D10 /* XCLocalSwiftPackageReference "../SwiftPackage/SharpsellCore" */ = {
+		84FDAC462DDA6E04002E936F /* XCLocalSwiftPackageReference "../SharpsellCore" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../SwiftPackage/SharpsellCore;
+			relativePath = ../SharpsellCore;
 		};
 /* End XCLocalSwiftPackageReference section */
 
@@ -748,6 +888,182 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8403FB4C2DA3E7C300076606 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		8403FB672DA3F19700076606 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		841354DB2DD92239006DA825 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		8416317E2DDA2A9C00C1FE62 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		8416318A2DDA46E000C1FE62 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		8416D3E62DA3BBC500086014 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		8419658B2D788A83004D552A /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		843476562DD8D5A700BEDEEA /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		844BAA172D6F1FA200177B96 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		844BAA232D6F2BA400177B96 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		845F0B422D9514EA00E838C9 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		846892E82DD8D0050062FD41 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		846948FB2DA6642E003F149B /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		846948FE2DA66862003F149B /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		846949012DA68684003F149B /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		846B9FEF2DDA4C6C00631CF4 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		847FD6AC2DA5370E007D4BA8 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		847FD6D02DA53B25007D4BA8 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84843C6A2D79445700FE215C /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84843C6D2D79465100FE215C /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84843C702D79474C00FE215C /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84843C742D7948BE00FE215C /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84843C772D7957FC00FE215C /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84843C7A2D79584E00FE215C /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84843C7D2D795B4900FE215C /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84843C802D79836A00FE215C /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84843C832D7989AE00FE215C /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84843C862D7989E200FE215C /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84843C892D79928E00FE215C /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		8487E4502DD8B829000E9DDC /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		8487E4532DD8C635000E9DDC /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84969B312DC1F0EA00CBE327 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		849B64382DD917DA00180761 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84B2CBDF2DD8CEF000C87A67 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84C0FDDE2DDA1DEE00951C6F /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84D08D5D2DD8F81C00E1E66B /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84D6B8492DC8E015004058CB /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84DF5DBE2DD7D5F100862DD5 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84EE715A2DD9CF5500E7C4E6 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84F5657F2DD8B0BA0005FA63 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84FA81DE2DDA233D001B8A19 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84FB6E7A2DDA646800DAD0A9 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84FDAC472DDA6E04002E936F /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
+		84FF382F2DD8B76800E77A50 /* SharpsellCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpsellCore;
+		};
 		D828A7582C450AE70098C2E3 /* SharpsellCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SharpsellCore;

@@ -11,8 +11,6 @@
 			</array>
 		</dict>
 	</array>
-	<key>ITSAppUsesNonExemptEncryption</key>
-	<false/>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>whatsapp</string>
@@ -20,10 +18,22 @@
 	</array>
 	<key>MoEngageAppDelegateProxyEnabled</key>
 	<false/>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>NSUserActivityTypeBrowsingWeb</string>
+	</array>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
 		<string>remote-notification</string>
 	</array>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>One SDK would like to save photos from the app to your gallery</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>One SDK would like to access your photo gallery for uploading images to the app</string>
 </dict>
 </plist>
