@@ -31,14 +31,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Sharpsell.services.createFlutterEngine()
         
         setupNotifications(application)
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .videoChat, options: [.allowBluetooth, .defaultToSpeaker])
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Failed to set AVAudioSession: \(error)")
+        }
         
-//        AVCaptureDevice.requestAccess(for: .audio) { granted in
-//            if (granted){
-//                print("Granted")
-//            }else {
-//                print("Not - Granted")
-//            }
-//        }
+        AVCaptureDevice.requestAccess(for: .audio) { granted in
+            if (granted){
+                print("Granted")
+            }else {
+                print("Not - Granted")
+            }
+        }
+        
+        AVCaptureDevice.requestAccess(for: .video) { granted in
+            if (granted){
+                print("Granted")
+            }else {
+                print("Not - Granted")
+            }
+        }
         
         
         
@@ -111,6 +126,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 
+
 extension AppDelegate: UNUserNotificationCenterDelegate{
     
     // Receive displayed notifications for iOS 10 devices.
@@ -133,65 +149,75 @@ extension AppDelegate: UNUserNotificationCenterDelegate{
         
         NSLog("Sharpsell Parent App: did recived notfications on userNotificationCenter - didReceive")
         NSLog("Sharpsell Parent App: - \(notificationInfo)")
-//        if let app_extra = notificationInfo["app_extra"] as? [AnyHashable : Any],let moe_deeplink = app_extra["moe_deeplink"] as? String{
-//            Sharpsell.services.setNotificationDataWhenDidReceive(center, response)
-//            let dvcArgs = ["route" : moe_deeplink]
-//            var sharpsellOpenDataInString = Sharpsell.services.convertJsonToString(dict: dvcArgs) ?? ""
-//            
-//            Sharpsell.services.open(arguments: sharpsellOpenDataInString) { flutterViewController in
-//                flutterViewController.navigationController?.navigationBar.isHidden = true
-//                flutterViewController.modalPresentationStyle = .fullScreen
-//
-//                Sharpsell.services.getTopMostViewController { topMostViewController in
-//                    if topMostViewController is UINavigationController{
-//                        let topVC = topMostViewController as! UINavigationController
-//                        topVC.pushViewController(flutterViewController, animated: true)
-//                    } else {
-//                        topMostViewController.present(flutterViewController, animated: true, completion: nil)
-//                    }
-//                } onFailure: {
-//                    NSLog("Sharpsell Parent App - Failed to get top most view controller")
-//                }
-//
-//            } onFailure: { message, errorType in
-//                NSLog("Sharpsell Parent App - Failed to open sharpsell from notification ❌")
-//            }
-//        } else {
-//            
-//            Sharpsell.services.handleNotificationRedirection(notificationData: notificationInfo) { notificationData in
-//                NSLog("Sharpsell Parent App- Notification opend Successfull 🥳")
-//                NSLog("Sharpsell Parent App : notificationData - \(notificationData)")
-//
-//                Sharpsell.services.setNotificationDataWhenDidReceive(center, response)
-//
-//                Sharpsell.services.open(arguments: notificationData) { flutterViewController in
-//                    flutterViewController.navigationController?.navigationBar.isHidden = true
-//                    flutterViewController.modalPresentationStyle = .fullScreen
-//
-//                    Sharpsell.services.getTopMostViewController { topMostViewController in
-//                        if topMostViewController is UINavigationController{
-//                            let topVC = topMostViewController as! UINavigationController
-//                            topVC.pushViewController(flutterViewController, animated: true)
-//                        } else {
-//                            topMostViewController.present(flutterViewController, animated: true, completion: nil)
-//                        }
-//                    } onFailure: {
-//                        NSLog("Sharpsell Parent App - Failed to get top most view controller")
-//                    }
-//
-//                } onFailure: { message, errorType in
-//                    NSLog("Sharpsell Parent App - Failed to open sharpsell from notification ❌")
-//                }
-//
-//            } onFailure: { message, errorType in
-//                NSLog("Sharpsell Parent App - Failed to handle notfication ❌")
-//            }
-//
-//        }
+//     This below piece of code is already commented
+        if let app_extra = notificationInfo["app_extra"] as? [AnyHashable : Any],let moe_deeplink = app_extra["moe_deeplink"] as? String{
+            Sharpsell.services.setNotificationDataWhenDidReceive(center, response)
+            let dvcArgs = ["route" : moe_deeplink]
+            var sharpsellOpenDataInString = Sharpsell.services.convertJsonToString(dict: dvcArgs) ?? ""
+            
+            Sharpsell.services.open(arguments: sharpsellOpenDataInString) { flutterViewController in
+                flutterViewController.navigationController?.navigationBar.isHidden = true
+                flutterViewController.modalPresentationStyle = .fullScreen
+
+                Sharpsell.services.getTopMostViewController { topMostViewController in
+                    if topMostViewController is UINavigationController{
+                        let topVC = topMostViewController as! UINavigationController
+                        topVC.pushViewController(flutterViewController, animated: true)
+                    } else {
+                        topMostViewController.present(flutterViewController, animated: true, completion: nil)
+                    }
+                } onFailure: {
+                    NSLog("Sharpsell Parent App - Failed to get top most view controller")
+                }
+
+            } onFailure: { message, errorType in
+                NSLog("Sharpsell Parent App - Failed to open sharpsell from notification ❌")
+            }
+        } else {
+            
+            Sharpsell.services.handleNotificationRedirection(notificationData: notificationInfo) { notificationData in
+                NSLog("Sharpsell Parent App- Notification opend Successfull 🥳")
+                NSLog("Sharpsell Parent App : notificationData - \(notificationData)")
+
+                Sharpsell.services.setNotificationDataWhenDidReceive(center, response)
+
+                Sharpsell.services.open(arguments: notificationData) { flutterViewController in
+                    flutterViewController.navigationController?.navigationBar.isHidden = true
+                    flutterViewController.modalPresentationStyle = .fullScreen
+
+                    Sharpsell.services.getTopMostViewController { topMostViewController in
+                        if topMostViewController is UINavigationController{
+                            let topVC = topMostViewController as! UINavigationController
+                            topVC.pushViewController(flutterViewController, animated: true)
+                        } else {
+                            topMostViewController.present(flutterViewController, animated: true, completion: nil)
+                        }
+                    } onFailure: {
+                        NSLog("Sharpsell Parent App - Failed to get top most view controller")
+                    }
+
+                } onFailure: { message, errorType in
+                    NSLog("Sharpsell Parent App - Failed to open sharpsell from notification ❌")
+                }
+
+            } onFailure: { message, errorType in
+                NSLog("Sharpsell Parent App - Failed to handle notfication ❌")
+            }
+
+        }
+//     This function will be called on click on the sharpsell notifcation - END
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-//        Sharpsell.services.setPushTokenWhenDidRegisterForRemoteNotifications(with: deviceToken)
+        
+        // Convert token to string
+           let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
+           let token = tokenParts.joined()
+           
+           // Log it for debugging
+           print("Device Token: \(token)")
+        NSLog("Sharpsell - Device Token: \(token)")
+        Sharpsell.services.setPushTokenWhenDidRegisterForRemoteNotifications(with: deviceToken)
     }
     
     

@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sharpsellAPIKeyTxtField: UITextField!
     
     //MARK: - Property Declration
-    var sharpsellReleaseVersion = "3.22.0"
+    var sharpsellReleaseVersion = "4.0.0"
     
     //MARK: - View Lifecycle
     override func viewDidLoad() {
