@@ -8,6 +8,7 @@
 import UIKit
 import SharpsellCore
 import AVFoundation
+import app_links
 
 //import Firebase
 
@@ -54,6 +55,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("Not - Granted")
             }
         }
+        // Retrieve the link from parameters
+          if let url = AppLinks.shared.getLink(launchOptions: launchOptions) {
+            // We have a link, propagate it to your Flutter app or not
+            AppLinks.shared.handleLink(url: url)
+            return true // Returning true will stop the propagation to other packages
+          }
+
         
         
         
@@ -86,6 +94,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         return true
     }
+    func application(_ application: UIApplication,
+                     continue userActivity: NSUserActivity,
+                     restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        
+        if userActivity.activityType == NSUserActivityTypeBrowsingWeb,
+           let incomingURL = userActivity.webpageURL {
+            AppLinks.shared.handleLink(url: incomingURL)
+        }
+
+        return true
+    }
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        print("App opened with custom URL: \(url.absoluteString)")
+
+           // You can parse the URL here
+           if let host = url.host {
+               print("Host: \(host)")
+           }
+            AppLinks.shared.handleLink(url: url)
+           return true
+
+      }
     
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
         return [.portrait]
@@ -144,7 +174,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate{
     func userNotificationCenter(_ center: UNUserNotificationCenter,
                                 didReceive response: UNNotificationResponse) async {
         let notificationInfo = response.notification.request.content.userInfo
-        
+      
         //For Sharpsell this function will be called on click of the notifications
         
         NSLog("Sharpsell Parent App: did recived notfications on userNotificationCenter - didReceive")
@@ -250,14 +280,14 @@ extension AppDelegate: UNUserNotificationCenterDelegate{
 //extension AppDelegate: MessagingDelegate{
 //    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
 //        NSLog("Sharpsell Parent App: Firebase registration token from iOS: \(String(describing: fcmToken))")
-//        
+//
 //        let dataDict: [String: String] = ["token": fcmToken ?? ""]
 //        NotificationCenter.default.post(
 //            name: Notification.Name("FCMToken"),
 //            object: nil,
 //            userInfo: dataDict
 //        )
-//        
+//
 //        if let token = fcmToken {
 //            print(token)
 //            defaults.set(String(describing: token), forKey: "fcmToken")
@@ -265,5 +295,5 @@ extension AppDelegate: UNUserNotificationCenterDelegate{
 //            NSLog("Sharpsell Parent App: Firebase token is empty ⚠️")
 //        }
 //    }
-//    
+//
 //}
