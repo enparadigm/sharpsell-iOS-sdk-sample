@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var userUniquieIDTxtField: UITextField!
     @IBOutlet weak var companyDetailsLbl: UILabel!
     @IBOutlet weak var sharpsellAPIKeyTxtField: UITextField!
+    @IBOutlet weak var sharpsellBaseUrlTxtField: UITextField!
     
     //MARK: - Property Declration
     var sharpsellReleaseVersion = "4.0.0"
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
         companyDetailsLbl.text = "\(sharpsellReleaseVersion)"
         userUniquieIDTxtField.delegate = self
         sharpsellAPIKeyTxtField.delegate = self
+        sharpsellBaseUrlTxtField.delegate = self
         companyCodeTxtField.delegate = self
     }
     
@@ -68,6 +70,7 @@ class ViewController: UIViewController {
             "company_code":companyCode,
             "user_unique_id": userUniquieIDTxtField.text ?? "",
             "sharpsell_api_key": sharpsellAPIKeyTxtField.text ?? "",
+            "base_url": sharpsellBaseUrlTxtField.text ?? "",
             "fcm_token": firebaseToken]
         NSLog("Sharpsell Parent App: Parent FCM TOKEN Before sending the data - \(firebaseToken)")
         NSLog("Sharpsell Parent App: Initlize data - \(initSharpsellData)")
