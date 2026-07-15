@@ -91,6 +91,12 @@ class ViewController: UIViewController {
                 defaults.set("", forKey: "fcmToken")
                 let cockpitVC = CockpitViewController()
                 self.navigationController?.pushViewController(cockpitVC, animated: true)
+
+                if let pendingLink = defaults.string(forKey: "pendingDeepLink"),
+                   let url = URL(string: pendingLink) {
+                    defaults.removeObject(forKey: "pendingDeepLink")
+                    (UIApplication.shared.delegate as? AppDelegate)?.openSharpsellDeepLink(url)
+                }
             }
         } onFailure: { (errorMessage, smartsellError) in
             switch smartsellError {

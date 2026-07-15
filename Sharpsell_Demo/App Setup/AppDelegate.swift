@@ -55,12 +55,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("Not - Granted")
             }
         }
-        // Retrieve the link from parameters
-          if let url = AppLinks.shared.getLink(launchOptions: launchOptions) {
-            // We have a link, propagate it to your Flutter app or not
-            AppLinks.shared.handleLink(url: url)
-            return true // Returning true will stop the propagation to other packages
-          }
+        // Capture a cold-start deep link. It is opened after the root view
+        // controller has been installed.
+        let launchURL = AppLinks.shared.getLink(launchOptions: launchOptions)
 
         
         
@@ -92,6 +89,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             setLoginPageAsRootVc()
         }
+
+        if let launchURL {
+            openSharpsellDeepLink(launchURL)
+        }
         return true
     }
     func application(_ application: UIApplication,
@@ -100,20 +101,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if userActivity.activityType == NSUserActivityTypeBrowsingWeb,
            let incomingURL = userActivity.webpageURL {
-            AppLinks.shared.handleLink(url: incomingURL)
+            openSharpsellDeepLink(incomingURL)
+            return true
         }
 
-        return true
+        return false
     }
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         print("App opened with custom URL: \(url.absoluteString)")
-
-           // You can parse the URL here
-           if let host = url.host {
-               print("Host: \(host)")
-           }
-            AppLinks.shared.handleLink(url: url)
-           return true
+        openSharpsellDeepLink(url)
+        return true
 
       }
     
@@ -149,6 +146,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = UINavigationController(rootViewController: vc)
         UIApplication.shared.windows.first?.rootViewController = navigationController
         UIApplication.shared.windows.first?.makeKeyAndVisible()
+    }
+
+    func openSharpsellDeepLink(_ url: URL) {
+        guard defaults.bool(forKey: "isUserLoggedIn") else {
+            defaults.set(url.absoluteString, forKey: "pendingDeepLink")
+            return
+        }
+
+        let route = URLComponents(url: url, resolvingAgainstBaseURL: false)?
+            .queryItems?
+            .first(where: { $0.name == "route" })?
+            .value ?? url.absoluteString
+        let arguments = Sharpsell.services.convertJsonToString(dict: ["route": route]) ?? ""
+
+        DispatchQueue.main.async {
+            Sharpsell.services.open(arguments: arguments) { flutterViewController in
+                flutterViewController.navigationController?.navigationBar.isHidden = true
+                flutterViewController.modalPresentationStyle = .fullScreen
+
+                Sharpsell.services.getTopMostViewController { topMostViewController in
+                    if let navigationController = topMostViewController as? UINavigationController {
+                        navigationController.pushViewController(flutterViewController, animated: true)
+                    } else {
+                        topMostViewController.present(flutterViewController, animated: true)
+                    }
+                } onFailure: {
+                    NSLog("Sharpsell Parent App - Failed to get top most view controller")
+                }
+            } onFailure: { message, _ in
+                NSLog("Sharpsell Parent App - Failed to open deep link: \(message)")
+            }
+        }
     }
     
     
