@@ -662,6 +662,7 @@
 				);
 				MARKETING_VERSION = 4.21.8;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sharpsell.sharpsellapp.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -706,6 +707,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 4.21.8;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sharpsell.sharpsellapp.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
