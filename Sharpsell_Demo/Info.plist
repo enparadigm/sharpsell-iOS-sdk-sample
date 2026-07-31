@@ -20,6 +20,13 @@
 		<string>whatsapp</string>
 		<string>sharpsell</string>
 	</array>
+    <key>NSLocationTemporaryUsageDescriptionDictionary</key>
+        <dict>
+            <key>PreciseLocationCapture</key>
+            <string>Allow precise location access to verify and record the location of meetings, visits, and field activities.</string>
+        </dict>
+        <key>NSLocationWhenInUseUsageDescription</key>
+        <string>Allow location access to verify and record the location of meetings, visits, and field activities.</string>
 	<key>MoEngageAppDelegateProxyEnabled</key>
 	<false/>
 	<key>UIBackgroundModes</key>
