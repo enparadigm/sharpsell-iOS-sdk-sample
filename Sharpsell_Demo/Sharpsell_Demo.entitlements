@@ -6,10 +6,9 @@
 	<string>development</string>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>applinks:sharpsell.page.link</string>
-		<string>applinks:sharpsell-test-uat.enparadigmtech.com</string>
-		<string>applinks:mhril.enparadigmtech.com</string>
-		<string>applinks:applink-dev.enparadigmtech.com</string>
+		<string>applinks:sharpsell.page.link</string>		
+		<string>applinks:*.enparadigmtech.com</string>
+        <string>applinks:*.sharpselltech.com</string>
 	</array>
 </dict>
 </plist>
