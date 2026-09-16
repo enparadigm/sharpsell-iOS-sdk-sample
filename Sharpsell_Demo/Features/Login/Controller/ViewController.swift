@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var companyDetailsLbl: UILabel!
     @IBOutlet weak var sharpsellAPIKeyTxtField: UITextField!
     @IBOutlet weak var sharpsellBaseUrlTxtField: UITextField!
+    @IBOutlet weak var clientDataTxtField: UITextField!
     
     //MARK: - Property Declration
     var sharpsellReleaseVersion = "4.0.0"
@@ -45,6 +46,11 @@ class ViewController: UIViewController {
         sharpsellAPIKeyTxtField.delegate = self
         sharpsellBaseUrlTxtField.delegate = self
         companyCodeTxtField.delegate = self
+        clientDataTxtField.delegate = self
+        if clientDataTxtField.text?.isEmpty ?? true {
+            clientDataTxtField.text =
+                "{\"recipient_name\":\"John Doe\",\"recipient_number\":\"+919876543210\",\"source\":\"manual\"}"
+        }
     }
     
     private func callSmartsellLogin(){
@@ -71,7 +77,8 @@ class ViewController: UIViewController {
             "user_unique_id": userUniquieIDTxtField.text ?? "",
             "sharpsell_api_key": sharpsellAPIKeyTxtField.text ?? "",
             "base_url": sharpsellBaseUrlTxtField.text ?? "",
-            "fcm_token": firebaseToken]
+            "fcm_token": firebaseToken,
+            "client_data": mergedClientData()]
         NSLog("Sharpsell Parent App: Parent FCM TOKEN Before sending the data - \(firebaseToken)")
         NSLog("Sharpsell Parent App: Initlize data - \(initSharpsellData)")
         
@@ -109,6 +116,45 @@ class ViewController: UIViewController {
             }
         }
         
+    }
+
+    /// Builds `client_data` the same way Android MainActivity.login() does:
+    /// start with correlation_id + language, then merge keys from the JSON text field.
+    private func mergedClientData() -> [String: Any] {
+        var clientData: [String: Any] = [
+            "correlation_id": "0c853958-ac62-447b-851c-ef3d41984f9e",
+            "language": "english"
+        ]
+
+        let rawClientData = clientDataTxtField.text?
+            .trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        guard !rawClientData.isEmpty else {
+            return clientData
+        }
+
+        guard let jsonData = rawClientData.data(using: .utf8) else {
+            showInvalidClientDataAlert("Unable to read client data")
+            return clientData
+        }
+
+        do {
+            guard let textboxJson = try JSONSerialization.jsonObject(with: jsonData) as? [String: Any] else {
+                showInvalidClientDataAlert("Client data must be a JSON object")
+                return clientData
+            }
+            for (key, value) in textboxJson {
+                clientData[key] = value
+            }
+        } catch {
+            showInvalidClientDataAlert("Invalid JSON client Data - \(error.localizedDescription)")
+        }
+        return clientData
+    }
+
+    private func showInvalidClientDataAlert(_ message: String) {
+        let alertController = UIAlertController(title: "⚠️", message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default))
+        present(alertController, animated: true)
     }
     
     

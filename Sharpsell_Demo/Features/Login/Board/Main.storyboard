@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="vTc-Uh-h9G">
-                                <rect key="frame" x="20" y="203.5" width="374" height="271"/>
+                                <rect key="frame" x="20" y="203.5" width="374" height="330"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="sharpsell-test-uat" borderStyle="roundedRect" placeholder="Company code" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bNV-bR-rNn" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -130,8 +130,34 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="{&quot;recipient_name&quot;:&quot;John Doe&quot;,&quot;recipient_number&quot;:&quot;+919876543210&quot;,&quot;source&quot;:&quot;manual&quot;}" borderStyle="roundedRect" placeholder="Client Data JSON" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kCl-Dt-Txt" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="0.0" y="236" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="none" autocorrectionType="no" spellCheckingType="no"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                <color key="value" systemColor="systemPurpleColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Client Data JSON"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" systemColor="systemPurpleColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9k-VX-nyH">
-                                        <rect key="frame" x="0.0" y="236" width="374" height="35"/>
+                                        <rect key="frame" x="0.0" y="295" width="374" height="35"/>
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
                                         <state key="normal" title="Login">
@@ -144,7 +170,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zX9-Jl-hSh" userLabel="SDK Details Stack">
-                                <rect key="frame" x="20" y="504.5" width="374" height="19"/>
+                                <rect key="frame" x="20" y="563.5" width="374" height="19"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEz-S1-3nb">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="19"/>
@@ -170,6 +196,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="SMs-gY-3I8"/>
                     <connections>
+                        <outlet property="clientDataTxtField" destination="kCl-Dt-Txt" id="kCl-Dt-Out"/>
                         <outlet property="companyCodeTxtField" destination="bNV-bR-rNn" id="zsM-0D-Guv"/>
                         <outlet property="companyDetailsLbl" destination="wEz-S1-3nb" id="ohJ-gc-XPv"/>
                         <outlet property="loginBtn" destination="O9k-VX-nyH" id="Lu0-Cs-OLI"/>
