@@ -144,6 +144,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func registerSdkRedirectHandler() {
         Sharpsell.services.sdkRedirectHandler = { path in
+            if path == "logout" {
+                defaults.set(false, forKey: "isUserLoggedIn")
+                defaults.set("", forKey: "companyLoggedIn")
+                self.setLoginPageAsRootVc()
+                return
+            }
             guard path == "back" else { return }
             guard let top = Self.topViewController(), top is FlutterViewController else { return }
             if let navigationController = top.navigationController {
