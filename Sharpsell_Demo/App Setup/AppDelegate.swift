@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Flutter
 import SharpsellCore
 import AVFoundation
 import app_links
@@ -30,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Calling Sharpsell flutter engine
         Sharpsell.services.createFlutterEngine()
+        registerSdkRedirectHandler()
         
         setupNotifications(application)
 
@@ -140,6 +142,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        Messaging.messaging().delegate = self
     }
     
+    private func registerSdkRedirectHandler() {
+        Sharpsell.services.sdkRedirectHandler = { path in
+            if path == "logout" {
+                defaults.set(false, forKey: "isUserLoggedIn")
+                defaults.set("", forKey: "companyLoggedIn")
+                self.setLoginPageAsRootVc()
+                return
+            }
+            guard path == "back" else { return }
+            guard let top = Self.topViewController(), top is FlutterViewController else { return }
+            if let navigationController = top.navigationController {
+                navigationController.popViewController(animated: true)
+            } else {
+                top.dismiss(animated: true)
+            }
+        }
+    }
+
+    private static func topViewController(base: UIViewController? = UIApplication.shared.windows.first?.rootViewController) -> UIViewController? {
+        if let navigationController = base as? UINavigationController {
+            return topViewController(base: navigationController.visibleViewController)
+        }
+        if let presented = base?.presentedViewController {
+            return topViewController(base: presented)
+        }
+        return base
+    }
+
     func setLoginPageAsRootVc(){
         let story = UIStoryboard(name: "Main", bundle:nil)
         let vc = story.instantiateViewController(withIdentifier: "ViewController") as! ViewController
