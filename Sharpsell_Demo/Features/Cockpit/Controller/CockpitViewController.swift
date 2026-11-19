@@ -125,8 +125,9 @@ class CockpitViewController: UIViewController {
         
         Sharpsell.services.open(arguments: sharpsellOpenDataInString ?? ""){ (flutterViewController) in
             flutterViewController.navigationController?.navigationBar.isHidden = true
-//            self.present(flutterViewController, animated: true)
-            self.navigationController?.pushViewController(flutterViewController, animated: true)
+            if flutterViewController.parent == nil {
+                self.navigationController?.pushViewController(flutterViewController, animated: true)
+            }
         } onFailure: { (errorMessage, smartSellError) in
             switch smartSellError {
             case .flutterError:
