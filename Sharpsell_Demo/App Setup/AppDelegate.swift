@@ -154,34 +154,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return
         }
 
-        let route = URLComponents(url: url, resolvingAgainstBaseURL: false)?
-            .queryItems?
-            .first(where: { $0.name == "route" })?
-            .value ?? url.absoluteString
-        let arguments = Sharpsell.services.convertJsonToString(dict: ["route": route]) ?? ""
+        let arguments = Sharpsell.services.convertJsonToString(dict: ["route": url.absoluteString]) ?? ""
 
         DispatchQueue.main.async {
             Sharpsell.services.open(arguments: arguments) { flutterViewController in
-                flutterViewController.navigationController?.navigationBar.isHidden = true
-                flutterViewController.modalPresentationStyle = .fullScreen
-
-                Sharpsell.services.getTopMostViewController { topMostViewController in
-                    if let navigationController = topMostViewController as? UINavigationController {
-                        navigationController.pushViewController(flutterViewController, animated: true)
-                    } else {
-                        topMostViewController.present(flutterViewController, animated: true)
-                    }
-                } onFailure: {
-                    NSLog("Sharpsell Parent App - Failed to get top most view controller")
-                }
+                Self.showSharpsell(flutterViewController)
             } onFailure: { message, _ in
                 NSLog("Sharpsell Parent App - Failed to open deep link: \(message)")
             }
         }
     }
-    
-    
-    
+
+    /// `open` reuses one Flutter VC — do not push it again if it is already shown.
+    private static func showSharpsell(_ vc: UIViewController) {
+        if vc.parent != nil { return }
+        vc.navigationController?.navigationBar.isHidden = true
+        vc.modalPresentationStyle = .fullScreen
+        Sharpsell.services.getTopMostViewController { top in
+            if let nav = (top as? UINavigationController) ?? top.navigationController {
+                nav.pushViewController(vc, animated: true)
+            } else {
+                top.present(vc, animated: true)
+            }
+        } onFailure: {
+            NSLog("Sharpsell Parent App - Failed to get top most view controller")
+        }
+    }
 }
 
 
@@ -215,20 +213,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate{
             var sharpsellOpenDataInString = Sharpsell.services.convertJsonToString(dict: dvcArgs) ?? ""
             
             Sharpsell.services.open(arguments: sharpsellOpenDataInString) { flutterViewController in
-                flutterViewController.navigationController?.navigationBar.isHidden = true
-                flutterViewController.modalPresentationStyle = .fullScreen
-
-                Sharpsell.services.getTopMostViewController { topMostViewController in
-                    if topMostViewController is UINavigationController{
-                        let topVC = topMostViewController as! UINavigationController
-                        topVC.pushViewController(flutterViewController, animated: true)
-                    } else {
-                        topMostViewController.present(flutterViewController, animated: true, completion: nil)
-                    }
-                } onFailure: {
-                    NSLog("Sharpsell Parent App - Failed to get top most view controller")
-                }
-
+                Self.showSharpsell(flutterViewController)
             } onFailure: { message, errorType in
                 NSLog("Sharpsell Parent App - Failed to open sharpsell from notification ❌")
             }
@@ -241,20 +226,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate{
                 Sharpsell.services.setNotificationDataWhenDidReceive(center, response)
 
                 Sharpsell.services.open(arguments: notificationData) { flutterViewController in
-                    flutterViewController.navigationController?.navigationBar.isHidden = true
-                    flutterViewController.modalPresentationStyle = .fullScreen
-
-                    Sharpsell.services.getTopMostViewController { topMostViewController in
-                        if topMostViewController is UINavigationController{
-                            let topVC = topMostViewController as! UINavigationController
-                            topVC.pushViewController(flutterViewController, animated: true)
-                        } else {
-                            topMostViewController.present(flutterViewController, animated: true, completion: nil)
-                        }
-                    } onFailure: {
-                        NSLog("Sharpsell Parent App - Failed to get top most view controller")
-                    }
-
+                    Self.showSharpsell(flutterViewController)
                 } onFailure: { message, errorType in
                     NSLog("Sharpsell Parent App - Failed to open sharpsell from notification ❌")
                 }
